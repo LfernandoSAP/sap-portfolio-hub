@@ -1,96 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 222 58% 5%;
+    --bg2: 222 42% 8%;
+    --bg3: 222 38% 13%;
+    --foreground: 230 60% 94%;
+    --text2: 218 18% 60%;
+    --text3: 215 14% 35%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 222 47% 7%;
+    --card-foreground: 230 60% 94%;
+    --card2: 222 30% 11%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 222 47% 7%;
+    --popover-foreground: 230 60% 94%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 190 100% 50%;
+    --primary-foreground: 222 58% 5%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --accent-blue: 220 100% 50%;
+    --accent-purple: 263 84% 55%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --secondary: 222 30% 11%;
+    --secondary-foreground: 230 60% 94%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --muted: 222 30% 11%;
+    --muted-foreground: 218 18% 60%;
 
-    --destructive: 0 84.2% 60.2%;
+    --accent: 222 30% 11%;
+    --accent-foreground: 230 60% 94%;
+
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 190 100% 50% / 0.12;
+    --border-bright: 190 100% 50% / 0.25;
+    --input: 190 100% 50% / 0.12;
+    --ring: 190 100% 50%;
 
-    --radius: 0.5rem;
+    --radius: 12px;
 
-    --sidebar-background: 0 0% 98%;
+    --gradient-primary: linear-gradient(135deg, hsl(var(--accent-blue)), hsl(var(--accent-purple)));
+    --gradient-text: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent-blue)) 60%, hsl(var(--accent-purple)) 100%);
+    --glow: 0 0 40px hsl(var(--primary) / 0.08);
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --font-heading: 'Syne', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
   }
 }
 
@@ -99,7 +59,109 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+    background: hsl(var(--background));
+    color: hsl(var(--foreground));
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* Noise overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.4;
+  }
+
+  /* Grid background */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(hsl(var(--primary) / 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--primary) / 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+    z-index: 0;
+  }
+}
+
+@layer components {
+  .heading-font {
+    font-family: var(--font-heading);
+  }
+
+  .gradient-text {
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gradient-bg {
+    background: var(--gradient-primary);
+  }
+
+  .card-base {
+    background: hsl(var(--card));
+    border: 0.5px solid hsl(var(--border));
+    border-radius: var(--radius);
+    transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+  }
+
+  .card-base:hover {
+    border-color: hsl(var(--border-bright));
+    box-shadow: var(--glow);
+  }
+
+  .section-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 5rem 2.5rem;
+  }
+
+  .divider-line {
+    height: 0.5px;
+    background: linear-gradient(90deg, transparent, hsl(var(--border-bright)), transparent);
+    margin: 0 2.5rem;
+  }
+
+  .tag-pill {
+    font-size: 0.72rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    background: hsl(var(--accent-purple) / 0.12);
+    border: 0.5px solid hsl(var(--accent-purple) / 0.25);
+    color: hsl(270 80% 72%);
+    font-weight: 500;
+  }
+
+  .section-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: hsl(var(--primary));
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+  }
+}
+
+@layer utilities {
+  @keyframes pulse-dot {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(0.7); }
+  }
+  .animate-pulse-dot {
+    animation: pulse-dot 2s infinite;
   }
 }

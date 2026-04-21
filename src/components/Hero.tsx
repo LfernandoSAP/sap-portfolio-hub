@@ -3,7 +3,7 @@ import { useLang } from "@/hooks/useLang";
 import { Download, Mail, Linkedin, CheckCircle2 } from "lucide-react";
 
 const stats = [
-  { value: "20+", key: "stat_years" },
+  { value: "22+", key: "stat_years" },
   { value: "3", key: "stat_certs" },
   { value: "600+", key: "stat_users" },
   { value: "8", key: "stat_modules" },
@@ -11,6 +11,10 @@ const stats = [
 
 export default function Hero() {
   const { t } = useLang();
+
+  const heroParagraphs = t("hero_sub")
+    .split("\n\n")
+    .filter((p) => p.trim().length > 0);
 
   return (
     <section
@@ -52,14 +56,25 @@ export default function Hero() {
               </span>
             </motion.h1>
 
-            <motion.p
+            <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-[15px] text-text-secondary max-w-[640px] mb-6 leading-relaxed"
+              className="mb-6 space-y-3"
             >
-              {t("hero_sub")}
-            </motion.p>
+              {heroParagraphs.map((paragraph, index) => (
+                <p
+                  key={index}
+                  className={`text-[15px] leading-relaxed ${
+                    index === 0
+                      ? "text-primary font-semibold text-[16px]"
+                      : "text-text-secondary"
+                  }`}
+                >
+                  {paragraph}
+                </p>
+              ))}
+            </motion.div>
 
             <motion.div
               initial={{ opacity: 0, y: 10 }}

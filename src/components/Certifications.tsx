@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
 import { useLang } from "@/hooks/useLang";
-import { Award, Database, Cloud } from "lucide-react";
+import { Award, Database, Cloud, Landmark } from "lucide-react";
 
 const certs = [
-  { nameKey: "cert1_name", sub: "SAP S/4HANA Cloud Private Edition", Icon: Award },
-  { nameKey: "cert2_name", sub: "SAP Master Data Governance", Icon: Database },
-  { nameKey: "cert3_name", sub: "SAP Business Technology Platform", Icon: Cloud },
+  { nameKey: "cert1_name", code: "C_TS452_2410", sub: "S/4HANA Cloud Private Edition", year: "2025", Icon: Award },
+  { nameKey: "cert2_name", code: "C_TS452_2022", sub: "MM S/4HANA Private Edition", year: "2025", Icon: Award },
+  { nameKey: "cert3_name", code: "C_MDG_1909", sub: "Master Data Governance", year: "2025", Icon: Landmark },
+  { nameKey: "cert4_name", code: "P_BTPA_2408", sub: "SAP BTP Solution Architect", year: "2025", Icon: Cloud },
 ];
 
 export default function Certifications() {
@@ -34,7 +35,9 @@ export default function Certifications() {
               <div className="font-heading text-[14px] font-bold text-foreground mb-1 leading-snug">
                 {t(cert.nameKey)}
               </div>
+              <div className="text-xs text-primary font-mono font-semibold mb-1">{cert.code}</div>
               <div className="text-xs text-text-secondary">{cert.sub}</div>
+              <div className="text-[11px] text-text-secondary/70 mt-1">{cert.year}</div>
               <div className="mt-3 inline-flex items-center gap-1 status-success px-2 py-0.5 rounded-sm text-[11px] font-semibold">
                 Certified
               </div>

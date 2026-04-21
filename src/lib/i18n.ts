@@ -4,7 +4,7 @@ export const translations: Record<Lang, Record<string, string>> = {
   pt: {
     available: "Disponível para vagas remotas / internacionais",
     hero_title: "Consultor SAP MM",
-    hero_sub: "Profissional de TI com mais de 20 anos de experiência em infraestrutura crítica, liderança técnica e gestão de projetos. Especialista em SAP S/4HANA MM, MDG e BTP.",
+    hero_sub: "Consultor SAP S/4HANA MM | MDG | BTP\n\nProfissional de Tecnologia da Informação com mais de 22 anos de experiência em ambientes críticos, atuando na interseção entre processos de negócio, arquitetura de sistemas e experiência do usuário.\n\nEspecialista em desenhar e implementar soluções que simplificam a operação do usuário final, com forte atuação em processos de Procurement, Gestão de Materiais e Governança de Dados.\n\nComo Arquiteto e Desenvolvedor do ERP 5BPRv, projetei e implementei uma solução completa de gestão institucional, estruturando módulos de logística, estoque, materiais e auditoria, com foco em rastreabilidade, controle de dados e eficiência operacional — conceitos diretamente alinhados com SAP MM e SAP MDG.\n\nAtuo também no desenho funcional de sistemas financeiros e de compras, participando da modelagem de processos como requisição, cotação e pedido, conectando áreas de negócio à tecnologia e promovendo melhorias contínuas nos fluxos operacionais.\n\nTenho forte orientação a arquitetura, governança de dados e integração entre módulos, sempre com foco em criar soluções robustas, escaláveis e intuitivas para o usuário final.\n\nAtualmente direcionando minha carreira para Consultoria SAP, com foco em S/4HANA, Supply Chain e transformação digital.",
     contact_cta: "Entrar em contato",
     download_cv: "Baixar CV",
     stat_years: "Anos de experiência",
@@ -55,7 +55,7 @@ export const translations: Record<Lang, Record<string, string>> = {
   en: {
     available: "Available for Remote / International Positions",
     hero_title: "SAP MM Consultant",
-    hero_sub: "IT professional with 20+ years of experience in critical infrastructure, technical leadership, and project management. Specialized in SAP S/4HANA MM, MDG, and BTP.",
+    hero_sub: "SAP S/4HANA MM | MDG | BTP Consultant\n\nIT professional with 22+ years of experience in critical environments, working at the intersection of business processes, systems architecture, and user experience.\n\nSpecialized in designing and implementing solutions that simplify end-user operations, with strong expertise in Procurement processes, Materials Management, and Data Governance.\n\nAs Architect and Developer of ERP 5BPRv, I designed and implemented a complete institutional management solution, structuring modules for logistics, inventory, materials, and audit — with a focus on traceability, data control, and operational efficiency, concepts directly aligned with SAP MM and SAP MDG.\n\nI also work on the functional design of financial and procurement systems, participating in the modeling of processes such as requisition, quotation, and purchase order, connecting business areas to technology and driving continuous improvements in operational flows.\n\nI have a strong orientation toward architecture, data governance, and module integration, always focused on building robust, scalable, and intuitive solutions for end users.\n\nCurrently directing my career toward SAP Consulting, with a focus on S/4HANA, Supply Chain, and digital transformation.",
     contact_cta: "Get in touch",
     download_cv: "Download CV",
     stat_years: "Years of experience",
@@ -106,7 +106,7 @@ export const translations: Record<Lang, Record<string, string>> = {
   de: {
     available: "Verfügbar für Remote- / Internationale Stellen",
     hero_title: "SAP MM Berater",
-    hero_sub: "IT-Fachmann mit über 20 Jahren Erfahrung in kritischer Infrastruktur, technischer Führung und Projektmanagement. Spezialisiert auf SAP S/4HANA MM, MDG und BTP.",
+    hero_sub: "SAP S/4HANA MM | MDG | BTP Berater\n\nIT-Fachmann mit über 22 Jahren Erfahrung in kritischen Umgebungen, tätig an der Schnittstelle von Geschäftsprozessen, Systemarchitektur und Benutzererfahrung.\n\nSpezialisiert auf die Konzeption und Implementierung von Lösungen, die den Endbenutzer-Betrieb vereinfachen, mit starker Expertise in Beschaffungsprozessen, Materialwirtschaft und Daten-Governance.\n\nAls Architekt und Entwickler des ERP 5BPRv habe ich eine vollständige institutionelle Managementlösung entworfen und implementiert — mit Modulen für Logistik, Lager, Materialien und Audit, mit Fokus auf Rückverfolgbarkeit, Datenkontrolle und Betriebseffizienz, Konzepte direkt ausgerichtet auf SAP MM und SAP MDG.\n\nIch arbeite auch am funktionalen Design von Finanz- und Beschaffungssystemen und modelliere Prozesse wie Anforderung, Ausschreibung und Bestellung, verbinde Geschäftsbereiche mit Technologie und fördere kontinuierliche Verbesserungen.\n\nIch habe eine starke Ausrichtung auf Architektur, Daten-Governance und Modulintegration, stets mit Fokus auf robuste, skalierbare und intuitive Lösungen.\n\nDerzeit richte ich meine Karriere auf SAP-Beratung aus, mit Schwerpunkt auf S/4HANA, Supply Chain und digitaler Transformation.",
     contact_cta: "Kontakt aufnehmen",
     download_cv: "Lebenslauf herunterladen",
     stat_years: "Jahre Erfahrung",
@@ -157,7 +157,7 @@ export const translations: Record<Lang, Record<string, string>> = {
   es: {
     available: "Disponible para Posiciones Remotas / Internacionales",
     hero_title: "Consultor SAP MM",
-    hero_sub: "Profesional de TI con más de 20 años de experiencia en infraestructura crítica, liderazgo técnico y gestión de proyectos. Especializado en SAP S/4HANA MM, MDG y BTP.",
+    hero_sub: "Consultor SAP S/4HANA MM | MDG | BTP\n\nProfesional de Tecnología de la Información con más de 22 años de experiencia en entornos críticos, actuando en la intersección entre procesos de negocio, arquitectura de sistemas y experiencia del usuario.\n\nEspecializado en diseñar e implementar soluciones que simplifican la operación del usuario final, con fuerte actuación en procesos de Procurement, Gestión de Materiales y Gobernanza de Datos.\n\nComo Arquitecto y Desarrollador del ERP 5BPRv, diseñé e implementé una solución completa de gestión institucional, estructurando módulos de logística, inventario, materiales y auditoría — con foco en trazabilidad, control de datos y eficiencia operacional, conceptos directamente alineados con SAP MM y SAP MDG.\n\nTambién actúo en el diseño funcional de sistemas financieros y de compras, participando en la modelación de procesos como requisición, cotización y pedido de compra, conectando áreas de negocio con la tecnología y promoviendo mejoras continuas en los flujos operacionales.\n\nTengo fuerte orientación hacia arquitectura, gobernanza de datos e integración entre módulos, siempre enfocado en crear soluciones robustas, escalables e intuitivas para el usuario final.\n\nActualmente dirigiendo mi carrera hacia la Consultoría SAP, con foco en S/4HANA, Supply Chain y transformación digital.",
     contact_cta: "Ponerse en contacto",
     download_cv: "Descargar CV",
     stat_years: "Años de experiencia",
@@ -165,7 +165,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     stat_users: "Usuarios apoyados",
     stat_modules: "Módulos de ERP",
     section_exp: "Trayectoria",
-    exp_heading: "Experiencia Profesional",
+    exp_heading: "Experiencia Profissional",
     exp1_title: "Arquitecto & Desarrollador de ERP",
     exp1_company: "ERP 5BPRv — Proyecto Propio",
     present: "Presente",

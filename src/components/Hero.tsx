@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useLang } from "@/hooks/useLang";
-import { Download } from "lucide-react";
+import { Download, Mail, Linkedin, CheckCircle2 } from "lucide-react";
 
 const stats = [
   { value: "20+", key: "stat_years" },
@@ -13,80 +13,110 @@ export default function Hero() {
   const { t } = useLang();
 
   return (
-    <section id="hero" className="relative z-10 min-h-screen flex flex-col justify-center max-w-[900px] mx-auto px-6 pt-28 pb-16">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7 }}
-        className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-border bg-primary/5 text-xs text-primary tracking-widest uppercase font-medium mb-8 w-fit"
-      >
-        <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse-dot" />
-        {t("available")}
-      </motion.div>
+    <section
+      id="hero"
+      className="relative z-10 pt-20 pb-12 bg-gradient-to-b from-[hsl(213,100%,97%)] via-background to-background"
+    >
+      <div className="max-w-[1100px] mx-auto px-6 lg:px-10">
+        {/* Breadcrumb / Object Page header — Fiori style */}
+        <div className="flex items-center gap-2 text-xs text-text-secondary mb-4">
+          <span>Home</span>
+          <span>›</span>
+          <span>Consultants</span>
+          <span>›</span>
+          <span className="text-foreground font-semibold">Luiz Fernando</span>
+        </div>
 
-      <motion.h1
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, delay: 0.15 }}
-        className="font-heading font-extrabold text-[clamp(2.5rem,6vw,4.5rem)] leading-[1.05] tracking-tight mb-6"
-      >
-        Luiz Fernando
-        <br />
-        <span className="gradient-text">{t("hero_title")}</span>
-      </motion.h1>
-
-      <motion.p
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, delay: 0.3 }}
-        className="text-lg text-text-secondary max-w-[600px] mb-10 font-light"
-      >
-        {t("hero_sub")}
-      </motion.p>
-
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, delay: 0.3 }}
-        className="flex gap-4 flex-wrap"
-      >
-        <a
-          href="https://linkedin.com/in/luiz-fernando-gonçalves-da-silva-7719a3337"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-7 py-3 rounded-lg gradient-bg text-primary-foreground font-medium text-sm hover:opacity-85 hover:-translate-y-0.5 transition-all"
+        {/* Object Status badge */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+          className="inline-flex items-center gap-1.5 status-success px-2.5 py-1 rounded-sm text-xs font-semibold mb-5 w-fit"
         >
-          LinkedIn →
-        </a>
-        <a
-          href="mailto:lfernandosap@gmail.com"
-          className="inline-flex items-center gap-2 px-7 py-3 rounded-lg border border-border text-text-secondary font-medium text-sm hover:bg-primary/5 hover:text-foreground hover:border-primary transition-all"
-        >
-          {t("contact_cta")}
-        </a>
-        <a
-          href="/Luiz_Fernando_CV.pdf"
-          download
-          className="inline-flex items-center gap-2 px-7 py-3 rounded-lg border border-border text-text-secondary font-medium text-sm hover:bg-primary/5 hover:text-foreground hover:border-primary transition-all"
-        >
-          <Download className="w-4 h-4" />
-          {t("download_cv")}
-        </a>
-      </motion.div>
+          <CheckCircle2 className="w-3.5 h-3.5" />
+          {t("available")}
+        </motion.div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, delay: 0.3 }}
-        className="flex gap-10 mt-16 pt-10 border-t border-border flex-wrap"
-      >
-        {stats.map((s) => (
-          <div key={s.key}>
-            <div className="font-heading text-3xl font-extrabold text-primary leading-none">{s.value}</div>
-            <div className="text-xs text-text-secondary mt-1 tracking-wide">{t(s.key)}</div>
+        <div className="grid lg:grid-cols-[1fr_auto] gap-8 items-end">
+          <div>
+            <motion.h1
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="font-heading font-bold text-[clamp(2rem,5vw,3.5rem)] leading-[1.1] tracking-tight text-foreground mb-3"
+            >
+              Luiz Fernando
+              <span className="block text-primary font-semibold text-[clamp(1.2rem,2.5vw,1.75rem)] mt-1">
+                {t("hero_title")}
+              </span>
+            </motion.h1>
+
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="text-[15px] text-text-secondary max-w-[640px] mb-6 leading-relaxed"
+            >
+              {t("hero_sub")}
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className="flex gap-2 flex-wrap"
+            >
+              <a
+                href="https://linkedin.com/in/luiz-fernando-gonçalves-da-silva-7719a3337"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 h-9 rounded-sm bg-primary text-primary-foreground font-semibold text-[13px] hover:bg-primary/90 transition shadow-sm"
+              >
+                <Linkedin className="w-3.5 h-3.5" />
+                LinkedIn
+              </a>
+              <a
+                href="mailto:lfernandosap@gmail.com"
+                className="inline-flex items-center gap-2 px-4 h-9 rounded-sm border border-primary text-primary font-semibold text-[13px] hover:bg-primary/5 transition"
+              >
+                <Mail className="w-3.5 h-3.5" />
+                {t("contact_cta")}
+              </a>
+              <a
+                href="/Luiz_Fernando_CV.pdf"
+                download
+                className="inline-flex items-center gap-2 px-4 h-9 rounded-sm border border-border text-foreground font-semibold text-[13px] hover:bg-secondary transition"
+              >
+                <Download className="w-3.5 h-3.5" />
+                {t("download_cv")}
+              </a>
+            </motion.div>
           </div>
-        ))}
-      </motion.div>
+        </div>
+
+        {/* KPI Tiles — Fiori Launchpad style */}
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-10"
+        >
+          {stats.map((s) => (
+            <div
+              key={s.key}
+              className="card-base p-4 hover:-translate-y-0.5 cursor-default"
+            >
+              <div className="text-[11px] uppercase tracking-wider text-text-secondary font-semibold mb-1">
+                {t(s.key)}
+              </div>
+              <div className="font-heading text-3xl font-bold text-primary leading-none">
+                {s.value}
+              </div>
+            </div>
+          ))}
+        </motion.div>
+      </div>
     </section>
   );
 }

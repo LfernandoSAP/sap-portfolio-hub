@@ -11,13 +11,9 @@ export default function Index() {
     <>
       <Navbar />
       <Hero />
-      <div className="divider-line" />
       <Experience />
-      <div className="divider-line" />
       <Certifications />
-      <div className="divider-line" />
       <Skills />
-      <div className="divider-line" />
       <Contact />
       <Footer />
     </>

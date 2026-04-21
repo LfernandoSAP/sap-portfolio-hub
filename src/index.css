@@ -1,56 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* ================================
+   SAP Fiori / SAP BTP inspired theme
+   Reference: SAP Fiori Horizon (light)
+   ================================ */
 @layer base {
   :root {
-    --background: 222 58% 5%;
-    --bg2: 222 42% 8%;
-    --bg3: 222 38% 13%;
-    --foreground: 230 60% 94%;
-    --text2: 218 18% 60%;
-    --text3: 215 14% 35%;
+    /* Backgrounds — Fiori Quartz Light */
+    --background: 210 33% 96%;       /* #F5F6F7 page background */
+    --bg2: 0 0% 100%;                /* tile / card */
+    --bg3: 210 20% 92%;              /* hover / secondary surface */
+    --foreground: 215 25% 17%;       /* #1D2D3E text */
+    --text2: 215 14% 38%;            /* secondary text */
+    --text3: 215 12% 55%;            /* tertiary text */
 
-    --card: 222 47% 7%;
-    --card-foreground: 230 60% 94%;
-    --card2: 222 30% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 17%;
+    --card2: 210 33% 98%;
 
-    --popover: 222 47% 7%;
-    --popover-foreground: 230 60% 94%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 17%;
 
-    --primary: 190 100% 50%;
-    --primary-foreground: 222 58% 5%;
+    /* SAP Brand Blue #0070F2 */
+    --primary: 213 100% 47%;
+    --primary-foreground: 0 0% 100%;
 
-    --accent-blue: 220 100% 50%;
-    --accent-purple: 263 84% 55%;
+    /* SAP accent palette */
+    --accent-blue: 213 100% 47%;     /* #0070F2 */
+    --accent-purple: 248 53% 58%;    /* SAP indigo #5D6CC9 */
+    --sap-success: 122 39% 41%;      /* #107E3E */
+    --sap-warning: 36 100% 50%;      /* #E76500 */
+    --sap-error: 354 70% 54%;        /* #BB0000 */
 
-    --secondary: 222 30% 11%;
-    --secondary-foreground: 230 60% 94%;
+    --secondary: 210 20% 92%;
+    --secondary-foreground: 215 25% 17%;
 
-    --muted: 222 30% 11%;
-    --muted-foreground: 218 18% 60%;
+    --muted: 210 20% 94%;
+    --muted-foreground: 215 14% 38%;
 
-    --accent: 222 30% 11%;
-    --accent-foreground: 230 60% 94%;
+    --accent: 213 100% 95%;
+    --accent-foreground: 213 100% 30%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 354 70% 54%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 190 100% 50% / 0.12;
-    --border-bright: 190 100% 50% / 0.25;
-    --input: 190 100% 50% / 0.12;
-    --ring: 190 100% 50%;
+    --border: 210 15% 86%;
+    --border-bright: 213 100% 47%;
+    --input: 210 15% 86%;
+    --ring: 213 100% 47%;
 
-    --radius: 12px;
+    --radius: 4px; /* SAP uses subtle, almost square corners */
 
-    --gradient-primary: linear-gradient(135deg, hsl(var(--accent-blue)), hsl(var(--accent-purple)));
-    --gradient-text: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent-blue)) 60%, hsl(var(--accent-purple)) 100%);
-    --glow: 0 0 40px hsl(var(--primary) / 0.08);
+    /* SAP gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(213 100% 47%), hsl(213 100% 38%));
+    --gradient-text: linear-gradient(135deg, hsl(213 100% 47%) 0%, hsl(248 53% 58%) 100%);
+    --gradient-shell: linear-gradient(180deg, hsl(215 35% 22%) 0%, hsl(215 30% 17%) 100%);
 
-    --font-heading: 'Syne', sans-serif;
-    --font-body: 'DM Sans', sans-serif;
+    /* Shadows — Fiori elevation */
+    --shadow-tile: 0 0 0 1px hsl(210 15% 86%), 0 1px 2px hsl(215 25% 17% / 0.05);
+    --shadow-tile-hover: 0 0 0 1px hsl(213 100% 47% / 0.4), 0 4px 12px hsl(213 100% 47% / 0.12);
+    --shadow-shell: 0 1px 3px hsl(215 25% 17% / 0.12);
+
+    --font-heading: 'Source Sans 3', '72', -apple-system, sans-serif;
+    --font-body: 'Source Sans 3', '72', -apple-system, sans-serif;
   }
 }
 
@@ -67,38 +83,16 @@
     font-family: var(--font-body);
     background: hsl(var(--background));
     color: hsl(var(--foreground));
-    line-height: 1.7;
+    line-height: 1.55;
     overflow-x: hidden;
-  }
-
-  /* Noise overlay */
-  body::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
-    pointer-events: none;
-    z-index: 0;
-    opacity: 0.4;
-  }
-
-  /* Grid background */
-  body::after {
-    content: '';
-    position: fixed;
-    inset: 0;
-    background-image:
-      linear-gradient(hsl(var(--primary) / 0.03) 1px, transparent 1px),
-      linear-gradient(90deg, hsl(var(--primary) / 0.03) 1px, transparent 1px);
-    background-size: 60px 60px;
-    pointer-events: none;
-    z-index: 0;
+    font-size: 14px; /* Fiori base */
   }
 }
 
 @layer components {
   .heading-font {
     font-family: var(--font-heading);
+    font-weight: 600;
   }
 
   .gradient-text {
@@ -112,47 +106,65 @@
     background: var(--gradient-primary);
   }
 
+  /* Fiori "Tile" style */
   .card-base {
     background: hsl(var(--card));
-    border: 0.5px solid hsl(var(--border));
+    border: 1px solid hsl(var(--border));
     border-radius: var(--radius);
-    transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    box-shadow: 0 1px 2px hsl(215 25% 17% / 0.04);
+    transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
   }
 
   .card-base:hover {
-    border-color: hsl(var(--border-bright));
-    box-shadow: var(--glow);
+    border-color: hsl(var(--primary) / 0.5);
+    box-shadow: var(--shadow-tile-hover);
   }
 
   .section-container {
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 5rem 2.5rem;
+    padding: 4rem 2rem;
   }
 
   .divider-line {
-    height: 0.5px;
-    background: linear-gradient(90deg, transparent, hsl(var(--border-bright)), transparent);
-    margin: 0 2.5rem;
+    height: 1px;
+    background: hsl(var(--border));
+    margin: 0;
   }
 
+  /* SAP-style chip / status indicator */
   .tag-pill {
     font-size: 0.72rem;
-    padding: 0.2rem 0.6rem;
+    padding: 0.15rem 0.55rem;
     border-radius: 4px;
-    background: hsl(var(--accent-purple) / 0.12);
-    border: 0.5px solid hsl(var(--accent-purple) / 0.25);
-    color: hsl(270 80% 72%);
-    font-weight: 500;
+    background: hsl(var(--accent));
+    border: 1px solid hsl(var(--primary) / 0.3);
+    color: hsl(var(--accent-foreground));
+    font-weight: 600;
+    letter-spacing: 0.01em;
   }
 
   .section-label {
     font-size: 0.7rem;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
     color: hsl(var(--primary));
-    font-weight: 500;
-    margin-bottom: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  /* SAP Shell bar */
+  .sap-shell {
+    background: var(--gradient-shell);
+    color: hsl(0 0% 100%);
+    box-shadow: var(--shadow-shell);
+  }
+
+  /* SAP Object Status */
+  .status-success {
+    color: hsl(var(--sap-success));
+    background: hsl(122 39% 41% / 0.08);
+    border: 1px solid hsl(var(--sap-success) / 0.3);
   }
 }
 

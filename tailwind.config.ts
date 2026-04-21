@@ -8,14 +8,12 @@ export default {
     container: {
       center: true,
       padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
+      screens: { "2xl": "1400px" },
     },
     extend: {
       fontFamily: {
-        heading: ["Syne", "sans-serif"],
-        body: ["DM Sans", "sans-serif"],
+        heading: ["Source Sans 3", "72", "sans-serif"],
+        body: ["Source Sans 3", "72", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -31,6 +29,9 @@ export default {
         },
         "accent-blue": "hsl(var(--accent-blue))",
         "accent-purple": "hsl(var(--accent-purple))",
+        "sap-success": "hsl(var(--sap-success))",
+        "sap-warning": "hsl(var(--sap-warning))",
+        "sap-error": "hsl(var(--sap-error))",
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
@@ -59,8 +60,8 @@ export default {
       },
       borderRadius: {
         lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        md: "calc(var(--radius))",
+        sm: "calc(var(--radius))",
       },
       keyframes: {
         "accordion-down": {

@@ -35,7 +35,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     exp_erp_company: "Projeto próprio",
     exp_erp_period: "jul. 2025 – Presente",
     exp_erp_status: "Em produção desde outubro de 2026",
-    exp_erp_b1: "Projetei e desenvolvi sozinho um ERP institucional com 8 módulos e mais de 20 entidades de negócio, da análise de requisitos à implantação em produção.",
+    exp_erp_b1: "Projetei e desenvolvi de forma independente um ERP institucional com 8 módulos e mais de 20 entidades de negócio, da análise de requisitos à implantação em produção.",
     exp_erp_b2: "Módulos de logística, frota, materiais, inventário, pessoal e relatórios, com rastreabilidade de movimentações e trilha de auditoria.",
     exp_erp_b3: "Controle de acesso por perfil (RBAC).",
     exp_erp_b4: "Emissão de PDF e exportação para Excel com layout institucional.",

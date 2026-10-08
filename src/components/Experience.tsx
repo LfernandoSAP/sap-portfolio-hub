@@ -7,8 +7,10 @@ import GalleryModal from "./GalleryModal";
 interface ExpData {
   titleKey: string;
   companyKey: string;
-  period: string;
+  periodKey: string;
+  statusKey?: string;
   bullets: string[];
+  projects?: string[];
   techStack?: string[];
   noteKey?: string;
   images: string[];
@@ -16,19 +18,28 @@ interface ExpData {
 
 const experiences: ExpData[] = [
   {
-    titleKey: "exp1_title",
-    companyKey: "exp1_company",
-    period: "2025",
-    bullets: ["exp1_b1", "exp1_b2", "exp1_b3", "exp1_b4", "exp1_b5", "exp1_b6", "exp1_b7"],
-    techStack: ["Python", "FastAPI", "PostgreSQL", "React", "SQLAlchemy", "Vite", "MUI", "JWT", "REST API"],
-    noteKey: "exp1_note",
+    titleKey: "exp_pm_title",
+    companyKey: "exp_pm_company",
+    periodKey: "exp_pm_period",
+    bullets: ["exp_pm_b1", "exp_pm_b2", "exp_pm_b3", "exp_pm_b4"],
+    projects: ["exp_pm_p1", "exp_pm_p2", "exp_pm_p3", "exp_pm_p4"],
     images: [],
   },
   {
-    titleKey: "exp2_title",
-    companyKey: "exp2_company",
-    period: "2003",
-    bullets: ["exp2_b1", "exp2_b2", "exp2_b3", "exp2_b4", "exp2_b5"],
+    titleKey: "exp_erp_title",
+    companyKey: "exp_erp_company",
+    periodKey: "exp_erp_period",
+    statusKey: "exp_erp_status",
+    bullets: ["exp_erp_b1", "exp_erp_b2", "exp_erp_b3", "exp_erp_b4"],
+    techStack: ["Python", "FastAPI", "PostgreSQL", "SQLAlchemy", "React", "Vite", "MUI", "REST API", "JWT"],
+    noteKey: "exp_erp_note",
+    images: [],
+  },
+  {
+    titleKey: "exp_sap_title",
+    companyKey: "exp_sap_company",
+    periodKey: "exp_sap_period",
+    bullets: ["exp_sap_b1", "exp_sap_b2", "exp_sap_b3", "exp_sap_b4"],
     images: [],
   },
 ];
@@ -60,15 +71,20 @@ export default function Experience() {
                   <div className="font-heading text-[17px] font-bold text-foreground leading-snug mb-1">
                     {t(exp.titleKey)}
                   </div>
-                  <div className="flex items-center gap-3 text-xs text-text-secondary">
+                  <div className="flex items-center gap-x-3 gap-y-1 flex-wrap text-xs text-text-secondary">
                     <span className="inline-flex items-center gap-1">
                       <Building2 className="w-3 h-3" />
                       {t(exp.companyKey)}
                     </span>
                     <span className="inline-flex items-center gap-1">
                       <Calendar className="w-3 h-3" />
-                      {exp.period} – {t("present")}
+                      {t(exp.periodKey)}
                     </span>
+                    {exp.statusKey && (
+                      <span className="inline-flex items-center status-success px-1.5 py-0.5 rounded-sm text-[11px] font-semibold">
+                        {t(exp.statusKey)}
+                      </span>
+                    )}
                   </div>
                 </div>
                 <button
@@ -90,6 +106,24 @@ export default function Experience() {
                   </li>
                 ))}
               </ul>
+
+              {exp.projects && (
+                <div className="mt-4">
+                  <div className="text-[11px] tracking-widest uppercase text-primary font-bold mb-2">
+                    {t("exp_projects_label")}
+                  </div>
+                  <ul className="flex flex-col gap-1.5">
+                    {exp.projects.map((p) => (
+                      <li
+                        key={p}
+                        className="text-[13.5px] text-foreground/85 pl-4 relative leading-relaxed before:content-['▸'] before:absolute before:left-0 before:text-primary"
+                      >
+                        <strong className="text-foreground">{t(`${p}_name`)}</strong> {t(p)}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
 
               {exp.techStack && (
                 <div className="flex flex-wrap gap-1.5 mt-4">

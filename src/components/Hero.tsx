@@ -4,9 +4,9 @@ import { Download, Mail, Linkedin, CheckCircle2 } from "lucide-react";
 
 const stats = [
   { value: "22+", key: "stat_years" },
-  { value: "4", key: "stat_certs" },
-  { value: "600+", key: "stat_users" },
-  { value: "8", key: "stat_modules" },
+  { value: "3", key: "stat_certs" },
+  { value: "500+", key: "stat_users" },
+  { value: "~25", key: "stat_units" },
 ];
 
 export default function Hero() {

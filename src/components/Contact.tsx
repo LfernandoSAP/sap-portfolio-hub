@@ -40,7 +40,7 @@ export default function Contact() {
               LinkedIn
             </a>
             <a
-              href="/Luiz_Fernando_CV.pdf"
+              href="/sap-portfolio-hub/Luiz_Fernando_CV.pdf"
               download
               className="inline-flex items-center gap-2 px-5 h-9 rounded-sm border border-border text-foreground font-semibold text-[13px] hover:bg-secondary transition"
             >

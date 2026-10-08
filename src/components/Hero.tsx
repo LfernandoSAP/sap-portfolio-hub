@@ -83,7 +83,7 @@ export default function Hero() {
               className="flex gap-2 flex-wrap"
             >
               <a
-                href="https://linkedin.com/in/luiz-fernando-gonçalves-da-silva-7719a3337"
+                href="https://www.linkedin.com/in/luizfernando-sap-mm/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 h-9 rounded-sm bg-primary text-primary-foreground font-semibold text-[13px] hover:bg-primary/90 transition shadow-sm"

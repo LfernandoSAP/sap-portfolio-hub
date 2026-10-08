@@ -104,7 +104,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     exp_pm_p4: "prototyping, requirements analysis, testing and post-implementation support. First electronic incident reporting system of the State Highway Police, with around 5,000 users.",
 
     exp_erp_title: "Creator & Developer – 5BPRv ERP",
-    exp_erp_company: "Personal project",
+    exp_erp_company: "Self-initiated project",
     exp_erp_period: "Jul 2025 – Present",
     exp_erp_status: "Live in production since October 2026",
     exp_erp_b1: "Single-handedly designed and built an institutional ERP with 8 modules and 20+ business entities, from requirements analysis to production go-live.",
@@ -176,7 +176,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     exp_pm_p4: "Prototyping, Anforderungsanalyse, Tests und Support nach der Einführung. Erstes elektronisches Einsatzberichtssystem der Autobahnpolizei, mit rund 5.000 Benutzern.",
 
     exp_erp_title: "Entwickler & Gründer – ERP 5BPRv",
-    exp_erp_company: "Eigenes Projekt",
+    exp_erp_company: "Eigeninitiiertes Projekt",
     exp_erp_period: "Juli 2025 – Heute",
     exp_erp_status: "Produktiv seit Oktober 2026",
     exp_erp_b1: "Eigenständige Konzeption und Entwicklung eines institutionellen ERP mit 8 Modulen und über 20 Geschäftsentitäten, von der Anforderungsanalyse bis zum Produktivstart.",
@@ -248,7 +248,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     exp_pm_p4: "prototipado, análisis de requisitos, pruebas y soporte post-implantación. Primer sistema electrónico de partes de ocurrencia de la Policía de Carreteras, con cerca de 5.000 usuarios.",
 
     exp_erp_title: "Creador y desarrollador – ERP 5BPRv",
-    exp_erp_company: "Proyecto propio",
+    exp_erp_company: "Proyecto por iniciativa propia",
     exp_erp_period: "jul. 2025 – Presente",
     exp_erp_status: "En producción desde octubre de 2026",
     exp_erp_b1: "Diseñé y desarrollé solo un ERP institucional con 8 módulos y más de 20 entidades de negocio, desde el análisis de requisitos hasta la puesta en producción.",

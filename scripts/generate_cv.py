@@ -9,8 +9,8 @@ BLUE=colors.HexColor("#0a6ed1"); DARK=colors.HexColor("#1d2d3e")
 H=ParagraphStyle('h',fontName='Helvetica-Bold',fontSize=18,textColor=DARK,leading=20)
 SUB=ParagraphStyle('s',fontName='Helvetica-Bold',fontSize=10.5,textColor=BLUE,leading=13)
 SM=ParagraphStyle('sm',fontName='Helvetica',fontSize=8.5,textColor=colors.HexColor("#556b82"),leading=11)
-SEC=ParagraphStyle('sec',fontName='Helvetica-Bold',fontSize=10.5,textColor=BLUE,spaceBefore=5,spaceAfter=2)
-B=ParagraphStyle('b',fontName='Helvetica',fontSize=9.5,leading=11.2,textColor=DARK)
+SEC=ParagraphStyle('sec',fontName='Helvetica-Bold',fontSize=10.5,textColor=BLUE,spaceBefore=4,spaceAfter=2)
+B=ParagraphStyle('b',fontName='Helvetica',fontSize=9.5,leading=10.8,textColor=DARK)
 R=ParagraphStyle('r',parent=B,fontName='Helvetica-Bold',fontSize=10)
 def bl(items): return ListFlowable([ListItem(Paragraph(i,B),leftIndent=10,value='•') for i in items],bulletType='bullet',start='•',leftIndent=10,bulletFontSize=8)
 def line(): 
@@ -18,13 +18,14 @@ def line():
 s=[]
 s+= [Paragraph("LUIZ FERNANDO GONÇALVES DA SILVA",H),
  Paragraph("SAP MM / S/4HANA Sourcing &amp; Procurement",SUB),
- Paragraph("SAP Certified | MM · MDG · BTP | 22+ Years in IT",SM),Spacer(1,3),
+ Paragraph("SAP Certified | MM · MDG · BTP · Business AI | 22+ Years in IT",SM),Spacer(1,3),
  Paragraph("Sorocaba, São Paulo, Brazil · Open to remote opportunities in Brazil and internationally<br/>+55 15 99704-3077 · lfernandosap@gmail.com · https://www.linkedin.com/in/luizfernando-sap-mm/ · lfernandosap.github.io/sap-portfolio-hub",SM),line()]
-s+=[Paragraph("SUMMARY",SEC),Paragraph("IT professional with 22+ years of experience in critical systems, infrastructure and business processes, SAP certified and focused on SAP MM / S/4HANA Sourcing &amp; Procurement functional consulting and support. Since January 2026, practicing continuously in an S/4HANA training environment (Cromos IT) with SAP GUI and SAP Fiori, covering Procure-to-Pay, material and supplier master data, info records, source lists, goods movements and physical inventory. Goal: SAP MM functional consulting and support roles, with MDG and BTP as complementary skills.",B)]
+s+=[Paragraph("SUMMARY",SEC),Paragraph("IT professional with 22+ years of experience in critical systems, infrastructure and business processes, SAP certified and focused on SAP MM / S/4HANA Sourcing &amp; Procurement functional consulting and support. Since January 2026, practicing continuously in an S/4HANA training environment (Cromos IT) with SAP GUI and SAP Fiori, covering Procure-to-Pay, material and supplier master data, info records, source lists, goods movements and physical inventory. Goal: SAP MM functional consulting and support roles, with MDG, BTP and SAP Business AI as complementary skills.",B)]
 s+=[Paragraph("SAP CERTIFICATIONS",SEC),bl([
  "<b>SAP Certified – SAP S/4HANA Cloud Private Edition – Sourcing and Procurement</b> — C_TS452_2410 (Nov 2025) · C_TS452_2022 (Dec 2025)",
  "<b>SAP Certified – SAP Master Data Governance</b> — C_MDG_1909 (2025)",
- "<b>SAP Certified – Solution Architect – SAP BTP</b> — P_BTPA_2511 (2025)"])]
+ "<b>SAP Certified – Solution Architect – SAP BTP</b> — P_BTPA_2511 (2025)",
+ "<b>SAP Certified – Solution Architect – SAP Business AI Platform</b> — C_BAIPA (Oct 2026)"])]
 s+=[Paragraph("PROFESSIONAL EXPERIENCE",SEC),
  Paragraph("Systems &amp; IT Infrastructure Analyst | ERP Development &amp; Technology Projects",R),
  Paragraph("São Paulo State Military Police · Dec 2003 – Present",SM),bl([
@@ -49,14 +50,14 @@ s+=[Paragraph("PROFESSIONAL EXPERIENCE",SEC),
  "Master data: materials, suppliers (Business Partner), purchasing info records and source lists.",
  "Inventory management: movement types, stock transfers and physical inventory.",
  "SAP GUI and SAP Fiori; Clean Core principles."])]
-rows=[["SAP Core","S/4HANA MM · SAP MDG · SAP BTP · Procure-to-Pay (P2P) · SAP Fiori · Clean Core"],
+rows=[["SAP Core","S/4HANA MM · SAP MDG · SAP BTP · SAP Business AI · Procure-to-Pay (P2P) · SAP Fiori · Clean Core"],
 ["SAP Processes","Purchase Requisition · Purchase Order · Goods Receipt · Invoice Verification · Master Data (Material/BP)"],
 ["Development","Python / FastAPI · React / Vite · PostgreSQL · REST API / JWT · SQLAlchemy"],
 ["Projects & Processes","Requirements Analysis · Key User Coordination · User Training · RBAC / Audit Trail · Fleet Management"]]
 t=Table([[Paragraph("<b>%s</b>"%a.replace('&','&amp;'),B),Paragraph(b,B)] for a,b in rows],colWidths=[38*mm,148*mm])
 t.setStyle(TableStyle([('VALIGN',(0,0),(-1,-1),'TOP'),('BOTTOMPADDING',(0,0),(-1,-1),1),('TOPPADDING',(0,0),(-1,-1),0),('LEFTPADDING',(0,0),(-1,-1),0)]))
 s+=[Paragraph("SKILLS",SEC),t]
-s+=[Paragraph("EDUCATION",SEC),bl(["<b>MBA — Logistics, Materials and Supply Chain Management</b> — UniFECAF · Completed in 2026 (diploma being issued)","<b>Technologist in Information Technology</b> — Universidade Paulista (UNIP) · 2010 – 2013"])]
+s+=[Paragraph("EDUCATION",SEC),bl(["<b>MBA — Logistics, Materials and Supply Chain Management</b> — UniFECAF · Dec 2025 – Dec 2026 (in progress)","<b>MBA — Artificial Intelligence and Big Data</b> — Anhanguera · May 2026 – Dec 2026 (in progress)","<b>Postgraduate — Generative AI Application Development</b> — Anhanguera · Sep 2026 – Apr 2027 (in progress)","<b>Technologist in Information Technology</b> — Universidade Paulista (UNIP) · 2010 – 2013"])]
 s+=[Paragraph("LANGUAGES",SEC),Paragraph("Portuguese — Native · English — Intermediate (actively studying)",B)]
-d=SimpleDocTemplate(sys.argv[1],pagesize=A4,leftMargin=12*mm,rightMargin=12*mm,topMargin=9*mm,bottomMargin=9*mm,title="Luiz Fernando — CV",author="Luiz Fernando Gonçalves da Silva")
+d=SimpleDocTemplate(sys.argv[1],pagesize=A4,leftMargin=12*mm,rightMargin=12*mm,topMargin=8*mm,bottomMargin=7*mm,title="Luiz Fernando — CV",author="Luiz Fernando Gonçalves da Silva")
 d.build(s)

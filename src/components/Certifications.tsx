@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useLang } from "@/hooks/useLang";
-import { Award, Cloud, Landmark, ExternalLink } from "lucide-react";
+import { Award, Cloud, Landmark, BrainCircuit, ExternalLink } from "lucide-react";
 
 const certs = [
   {
@@ -25,6 +25,13 @@ const certs = [
     url: "https://www.credly.com/badges/89de8400-eab0-46de-84d3-7cfde54ce8e9/public_url",
     Icon: Cloud,
   },
+  {
+    name: "SAP Certified – Solution Architect – SAP Business AI Platform",
+    code: "C_BAIPA",
+    year: "2026",
+    url: "https://www.credly.com/badges/54fa76a3-27ed-4a87-b95e-8fc349bd08b5/public_url",
+    Icon: BrainCircuit,
+  },
 ];
 
 export default function Certifications() {
@@ -37,7 +44,7 @@ export default function Certifications() {
         <h2 className="font-heading text-[clamp(1.4rem,2.5vw,1.875rem)] font-bold tracking-tight mb-8 text-foreground">
           {t("cert_heading")}
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-3">
           {certs.map((cert, idx) => (
             <motion.div
               key={idx}

@@ -4,7 +4,7 @@ export const translations: Record<Lang, Record<string, string>> = {
   pt: {
     available: "Disponível para vagas remotas no Brasil e internacionais",
     hero_title: "SAP MM / S/4HANA Sourcing & Procurement",
-    hero_sub: "Certificado SAP | MM · MDG · BTP · Business AI | 22+ anos em TI\n\nProfissional de TI com mais de 22 anos de experiência em sistemas críticos, infraestrutura e processos de negócio, com certificações SAP e foco em consultoria e suporte funcional SAP MM / S/4HANA Sourcing & Procurement.\n\nDesde janeiro de 2026, pratico continuamente em ambiente de treinamento S/4HANA (Cromos IT), com SAP GUI e SAP Fiori: Procure-to-Pay da requisição à verificação de faturas, dados mestre de materiais e fornecedores (Business Partner), registros info, listas de fontes, movimentações de estoque e inventário.\n\nNa Polícia Militar do Estado de São Paulo, atuo com análise de sistemas, infraestrutura e projetos de TI. Participei de projetos com dezenas de milhares de usuários, como o BOe (mais de 50.000 usuários), coordenei a implantação do SGA, sistema de gestão de compras e financeira hoje usado por cerca de 25 unidades, e criei o ERP 5BPRv, em produção desde outubro de 2026, aplicando ao desenho de materiais, estoques e frota fundamentos estudados em SAP MM.\n\nMeu objetivo é aplicar essa base em oportunidades de consultoria e suporte funcional SAP MM, com MDG e BTP como conhecimentos complementares.",
+    hero_sub: "Certificado SAP | MM · MDG · BTP · Business AI · Joule Studio | 22+ anos em TI\n\nProfissional de TI com mais de 22 anos de experiência em sistemas críticos, infraestrutura e processos de negócio, com certificações SAP e foco em consultoria e suporte funcional SAP MM / S/4HANA Sourcing & Procurement.\n\nDesde janeiro de 2026, pratico continuamente em ambiente de treinamento S/4HANA (Cromos IT), com SAP GUI e SAP Fiori: Procure-to-Pay da requisição à verificação de faturas, dados mestre de materiais e fornecedores (Business Partner), registros info, listas de fontes, movimentações de estoque e inventário.\n\nNa Polícia Militar do Estado de São Paulo, atuo com análise de sistemas, infraestrutura e projetos de TI. Participei de projetos com dezenas de milhares de usuários, como o BOe (mais de 50.000 usuários), coordenei a implantação do SGA, sistema de gestão de compras e financeira hoje usado por cerca de 25 unidades, e criei o ERP 5BPRv, em produção desde outubro de 2026, aplicando ao desenho de materiais, estoques e frota fundamentos estudados em SAP MM.\n\nMeu objetivo é aplicar essa base em oportunidades de consultoria e suporte funcional SAP MM, com MDG, BTP, SAP Business AI e Joule Studio como conhecimentos complementares.",
     contact_cta: "Entrar em contato",
     download_cv: "Baixar CV",
     stat_years: "Anos em TI",
@@ -28,7 +28,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     exp_pm_p2: "análise de requisitos, desenho de telas, testes em homologação e treinamento. Digitalizou um processo que tramitava em Excel por e-mail, com acompanhamento em tempo real pelos setores administrativos.",
     exp_pm_p3_name: "BOe (2017 – 2018):",
     exp_pm_p3: "análise de requisitos, testes, suporte e treinamento presencial. Aplicativo e sistema web da Polícia Militar com mais de 50.000 usuários, ainda em operação.",
-    exp_pm_p4_name: "BOATRv Eletrônico (2010 – 2017):",
+    exp_pm_p4_name: "BOATRv Eletrônico (2012 – 2017):",
     exp_pm_p4: "prototipação, análise de requisitos, testes e suporte pós-implantação. Primeiro sistema eletrônico de boletins do Policiamento Rodoviário, com cerca de 5.000 usuários.",
 
     exp_erp_title: "Criador e desenvolvedor – ERP 5BPRv",
@@ -53,6 +53,16 @@ export const translations: Record<Lang, Record<string, string>> = {
     cert_heading: "Certificações SAP",
     cert_view: "Ver credencial (Credly)",
     cert1_note: "O badge reúne as aprovações nos exames C_TS452_2410 (nov/2025) e C_TS452_2022 (dez/2025).",
+    cert_renewed: "Renovada em",
+    cert_valid: "Válida até",
+
+    section_edu: "Formação",
+    edu_heading: "Formação Acadêmica",
+    edu_in_progress: "Em andamento",
+    edu1: "MBA — Logística, Materiais e Gestão da Cadeia de Suprimentos",
+    edu2: "MBA — Inteligência Artificial e Big Data",
+    edu3: "Pós-graduação — Desenvolvimento de Aplicações com IA Generativa",
+    edu4: "Tecnólogo em Tecnologia da Informação",
 
     section_modules: "Especialidades",
     modules_heading: "Módulos & Domínios SAP",
@@ -76,7 +86,7 @@ export const translations: Record<Lang, Record<string, string>> = {
   en: {
     available: "Open to remote opportunities in Brazil and internationally",
     hero_title: "SAP MM / S/4HANA Sourcing & Procurement",
-    hero_sub: "SAP Certified | MM · MDG · BTP · Business AI | 22+ Years in IT\n\nIT professional with 22+ years of experience in critical systems, infrastructure and business processes, SAP certified and focused on SAP MM / S/4HANA Sourcing & Procurement functional consulting and support.\n\nSince January 2026, I have been practicing continuously in an S/4HANA training environment (Cromos IT), using SAP GUI and SAP Fiori: Procure-to-Pay from purchase requisition to invoice verification, material and supplier master data (Business Partner), purchasing info records, source lists, goods movements and physical inventory.\n\nAt the São Paulo State Military Police, I work in systems analysis, IT infrastructure and technology projects. I contributed to projects serving tens of thousands of users, such as BOe (50,000+ users), led the implementation of SGA, a procurement and financial management system now used by about 25 units, and built the 5BPRv ERP, live since October 2026, applying SAP MM principles to the design of materials, inventory and fleet processes.\n\nMy goal is to apply this foundation to SAP MM functional consulting and support roles, with MDG and BTP as complementary skills.",
+    hero_sub: "SAP Certified | MM · MDG · BTP · Business AI · Joule Studio | 22+ Years in IT\n\nIT professional with 22+ years of experience in critical systems, infrastructure and business processes, SAP certified and focused on SAP MM / S/4HANA Sourcing & Procurement functional consulting and support.\n\nSince January 2026, I have been practicing continuously in an S/4HANA training environment (Cromos IT), using SAP GUI and SAP Fiori: Procure-to-Pay from purchase requisition to invoice verification, material and supplier master data (Business Partner), purchasing info records, source lists, goods movements and physical inventory.\n\nAt the São Paulo State Military Police, I work in systems analysis, IT infrastructure and technology projects. I contributed to projects serving tens of thousands of users, such as BOe (50,000+ users), led the implementation of SGA, a procurement and financial management system now used by about 25 units, and built the 5BPRv ERP, live since October 2026, applying SAP MM principles to the design of materials, inventory and fleet processes.\n\nMy goal is to apply this foundation to SAP MM functional consulting and support roles, with MDG, BTP, SAP Business AI and Joule Studio as complementary skills.",
     contact_cta: "Get in touch",
     download_cv: "Download CV",
     stat_years: "Years in IT",
@@ -100,7 +110,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     exp_pm_p2: "requirements analysis, screen design, staging testing and user training. Digitized a process previously handled through Excel spreadsheets sent by email, enabling real-time tracking by administrative departments.",
     exp_pm_p3_name: "BOe (2017 – 2018):",
     exp_pm_p3: "requirements analysis, testing, support and on-site user training. Mobile app and web system of the Military Police with 50,000+ users, still in operation.",
-    exp_pm_p4_name: "BOATRv (2010 – 2017):",
+    exp_pm_p4_name: "BOATRv (2012 – 2017):",
     exp_pm_p4: "prototyping, requirements analysis, testing and post-implementation support. First electronic incident reporting system of the State Highway Police, with around 5,000 users.",
 
     exp_erp_title: "Creator & Developer – 5BPRv ERP",
@@ -125,6 +135,16 @@ export const translations: Record<Lang, Record<string, string>> = {
     cert_heading: "SAP Certifications",
     cert_view: "View credential (Credly)",
     cert1_note: "This badge includes passing results for exams C_TS452_2410 (Nov 2025) and C_TS452_2022 (Dec 2025).",
+    cert_renewed: "Renewed",
+    cert_valid: "Valid until",
+
+    section_edu: "Education",
+    edu_heading: "Academic Background",
+    edu_in_progress: "In progress",
+    edu1: "MBA — Logistics, Materials and Supply Chain Management",
+    edu2: "MBA — Artificial Intelligence and Big Data",
+    edu3: "Postgraduate — Generative AI Application Development",
+    edu4: "Technologist in Information Technology",
 
     section_modules: "Expertise",
     modules_heading: "SAP Modules & Domains",
@@ -148,7 +168,7 @@ export const translations: Record<Lang, Record<string, string>> = {
   de: {
     available: "Offen für Remote-Positionen in Brasilien und international",
     hero_title: "SAP MM / S/4HANA Sourcing & Procurement",
-    hero_sub: "SAP-zertifiziert | MM · MDG · BTP · Business AI | 22+ Jahre in der IT\n\nIT-Fachkraft mit über 22 Jahren Erfahrung in kritischen Systemen, IT-Infrastruktur und Geschäftsprozessen, SAP-zertifiziert und mit Fokus auf funktionale Beratung und Support für SAP MM / S/4HANA Sourcing & Procurement.\n\nSeit Januar 2026 übe ich kontinuierlich in einer S/4HANA-Schulungsumgebung (Cromos IT) mit SAP GUI und SAP Fiori: Procure-to-Pay von der Bestellanforderung bis zur Rechnungsprüfung, Material- und Lieferantenstammdaten (Business Partner), Einkaufsinfosätze, Orderbücher, Warenbewegungen und Inventur.\n\nBei der Militärpolizei des Bundesstaates São Paulo arbeite ich in Systemanalyse, IT-Infrastruktur und Technologieprojekten. Ich habe an Projekten mit Zehntausenden von Benutzern mitgewirkt, etwa BOe (über 50.000 Benutzer), die Einführung von SGA geleitet, einem Einkaufs- und Finanzmanagementsystem, das heute von rund 25 Einheiten genutzt wird, und das ERP 5BPRv entwickelt, seit Oktober 2026 produktiv, wobei ich SAP-MM-Prinzipien auf das Design von Material-, Bestands- und Fuhrparkprozessen angewendet habe.\n\nMein Ziel ist es, diese Grundlage in Rollen für funktionale SAP-MM-Beratung und -Support einzubringen, mit MDG und BTP als ergänzenden Kenntnissen.",
+    hero_sub: "SAP-zertifiziert | MM · MDG · BTP · Business AI · Joule Studio | 22+ Jahre in der IT\n\nIT-Fachkraft mit über 22 Jahren Erfahrung in kritischen Systemen, IT-Infrastruktur und Geschäftsprozessen, SAP-zertifiziert und mit Fokus auf funktionale Beratung und Support für SAP MM / S/4HANA Sourcing & Procurement.\n\nSeit Januar 2026 übe ich kontinuierlich in einer S/4HANA-Schulungsumgebung (Cromos IT) mit SAP GUI und SAP Fiori: Procure-to-Pay von der Bestellanforderung bis zur Rechnungsprüfung, Material- und Lieferantenstammdaten (Business Partner), Einkaufsinfosätze, Orderbücher, Warenbewegungen und Inventur.\n\nBei der Militärpolizei des Bundesstaates São Paulo arbeite ich in Systemanalyse, IT-Infrastruktur und Technologieprojekten. Ich habe an Projekten mit Zehntausenden von Benutzern mitgewirkt, etwa BOe (über 50.000 Benutzer), die Einführung von SGA geleitet, einem Einkaufs- und Finanzmanagementsystem, das heute von rund 25 Einheiten genutzt wird, und das ERP 5BPRv entwickelt, seit Oktober 2026 produktiv, wobei ich SAP-MM-Prinzipien auf das Design von Material-, Bestands- und Fuhrparkprozessen angewendet habe.\n\nMein Ziel ist es, diese Grundlage in Rollen für funktionale SAP-MM-Beratung und -Support einzubringen, mit MDG, BTP, SAP Business AI und Joule Studio als ergänzenden Kenntnissen.",
     contact_cta: "Kontakt aufnehmen",
     download_cv: "Lebenslauf herunterladen",
     stat_years: "Jahre in der IT",
@@ -172,7 +192,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     exp_pm_p2: "Anforderungsanalyse, Maskendesign, Tests in der Qualitätssicherungsumgebung und Schulung. Digitalisierte einen zuvor per E-Mail mit Excel-Tabellen abgewickelten Prozess, mit Echtzeit-Nachverfolgung durch die Verwaltungsbereiche.",
     exp_pm_p3_name: "BOe (2017 – 2018):",
     exp_pm_p3: "Anforderungsanalyse, Tests, Support und Präsenzschulungen. App und Websystem der Militärpolizei mit über 50.000 Benutzern, weiterhin in Betrieb.",
-    exp_pm_p4_name: "BOATRv (2010 – 2017):",
+    exp_pm_p4_name: "BOATRv (2012 – 2017):",
     exp_pm_p4: "Prototyping, Anforderungsanalyse, Tests und Support nach der Einführung. Erstes elektronisches Einsatzberichtssystem der Autobahnpolizei, mit rund 5.000 Benutzern.",
 
     exp_erp_title: "Entwickler & Gründer – ERP 5BPRv",
@@ -197,6 +217,16 @@ export const translations: Record<Lang, Record<string, string>> = {
     cert_heading: "SAP-Zertifizierungen",
     cert_view: "Nachweis ansehen (Credly)",
     cert1_note: "Dieses Badge umfasst die bestandenen Prüfungen C_TS452_2410 (Nov. 2025) und C_TS452_2022 (Dez. 2025).",
+    cert_renewed: "Erneuert",
+    cert_valid: "Gültig bis",
+
+    section_edu: "Ausbildung",
+    edu_heading: "Akademischer Werdegang",
+    edu_in_progress: "Laufend",
+    edu1: "MBA — Logistik, Materialwirtschaft und Supply Chain Management",
+    edu2: "MBA — Künstliche Intelligenz und Big Data",
+    edu3: "Postgraduierten-Studium — Entwicklung von Anwendungen mit generativer KI",
+    edu4: "Technologe in Informationstechnologie",
 
     section_modules: "Fachgebiete",
     modules_heading: "SAP-Module & Bereiche",
@@ -220,7 +250,7 @@ export const translations: Record<Lang, Record<string, string>> = {
   es: {
     available: "Disponible para vacantes remotas en Brasil e internacionales",
     hero_title: "SAP MM / S/4HANA Sourcing & Procurement",
-    hero_sub: "Certificado SAP | MM · MDG · BTP · Business AI | 22+ años en TI\n\nProfesional de TI con más de 22 años de experiencia en sistemas críticos, infraestructura y procesos de negocio, con certificaciones SAP y foco en consultoría y soporte funcional SAP MM / S/4HANA Sourcing & Procurement.\n\nDesde enero de 2026 practico de forma continua en un entorno de capacitación S/4HANA (Cromos IT), con SAP GUI y SAP Fiori: Procure-to-Pay desde la solicitud de pedido hasta la verificación de facturas, datos maestros de materiales y proveedores (Business Partner), registros info, libros de pedidos, movimientos de stock e inventario físico.\n\nEn la Policía Militar del Estado de São Paulo trabajo en análisis de sistemas, infraestructura y proyectos de TI. Participé en proyectos con decenas de miles de usuarios, como BOe (más de 50.000 usuarios), coordiné la implantación del SGA, sistema de gestión de compras y finanzas usado hoy por cerca de 25 unidades, y creé el ERP 5BPRv, en producción desde octubre de 2026, aplicando al diseño de materiales, inventarios y flota fundamentos estudiados en SAP MM.\n\nMi objetivo es aplicar esta base en oportunidades de consultoría y soporte funcional SAP MM, con MDG y BTP como conocimientos complementarios.",
+    hero_sub: "Certificado SAP | MM · MDG · BTP · Business AI · Joule Studio | 22+ años en TI\n\nProfesional de TI con más de 22 años de experiencia en sistemas críticos, infraestructura y procesos de negocio, con certificaciones SAP y foco en consultoría y soporte funcional SAP MM / S/4HANA Sourcing & Procurement.\n\nDesde enero de 2026 practico de forma continua en un entorno de capacitación S/4HANA (Cromos IT), con SAP GUI y SAP Fiori: Procure-to-Pay desde la solicitud de pedido hasta la verificación de facturas, datos maestros de materiales y proveedores (Business Partner), registros info, libros de pedidos, movimientos de stock e inventario físico.\n\nEn la Policía Militar del Estado de São Paulo trabajo en análisis de sistemas, infraestructura y proyectos de TI. Participé en proyectos con decenas de miles de usuarios, como BOe (más de 50.000 usuarios), coordiné la implantación del SGA, sistema de gestión de compras y finanzas usado hoy por cerca de 25 unidades, y creé el ERP 5BPRv, en producción desde octubre de 2026, aplicando al diseño de materiales, inventarios y flota fundamentos estudiados en SAP MM.\n\nMi objetivo es aplicar esta base en oportunidades de consultoría y soporte funcional SAP MM, con MDG, BTP, SAP Business AI y Joule Studio como conocimientos complementarios.",
     contact_cta: "Ponerse en contacto",
     download_cv: "Descargar CV",
     stat_years: "Años en TI",
@@ -244,7 +274,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     exp_pm_p2: "análisis de requisitos, diseño de pantallas, pruebas en homologación y capacitación. Digitalizó un proceso que se tramitaba en Excel por correo electrónico, con seguimiento en tiempo real por los sectores administrativos.",
     exp_pm_p3_name: "BOe (2017 – 2018):",
     exp_pm_p3: "análisis de requisitos, pruebas, soporte y capacitación presencial. Aplicación y sistema web de la Policía Militar con más de 50.000 usuarios, aún en operación.",
-    exp_pm_p4_name: "BOATRv Electrónico (2010 – 2017):",
+    exp_pm_p4_name: "BOATRv Electrónico (2012 – 2017):",
     exp_pm_p4: "prototipado, análisis de requisitos, pruebas y soporte post-implantación. Primer sistema electrónico de partes de ocurrencia de la Policía de Carreteras, con cerca de 5.000 usuarios.",
 
     exp_erp_title: "Creador y desarrollador – ERP 5BPRv",
@@ -269,6 +299,16 @@ export const translations: Record<Lang, Record<string, string>> = {
     cert_heading: "Certificaciones SAP",
     cert_view: "Ver credencial (Credly)",
     cert1_note: "El badge reúne las aprobaciones en los exámenes C_TS452_2410 (nov. 2025) y C_TS452_2022 (dic. 2025).",
+    cert_renewed: "Renovada en",
+    cert_valid: "Válida hasta",
+
+    section_edu: "Formación",
+    edu_heading: "Formación Académica",
+    edu_in_progress: "En curso",
+    edu1: "MBA — Logística, Materiales y Gestión de la Cadena de Suministro",
+    edu2: "MBA — Inteligencia Artificial y Big Data",
+    edu3: "Posgrado — Desarrollo de Aplicaciones con IA Generativa",
+    edu4: "Tecnólogo en Tecnología de la Información",
 
     section_modules: "Especialidades",
     modules_heading: "Módulos & Dominios SAP",

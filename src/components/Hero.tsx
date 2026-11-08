@@ -4,7 +4,7 @@ import { Download, Mail, Linkedin, CheckCircle2 } from "lucide-react";
 
 const stats = [
   { value: "22+", key: "stat_years" },
-  { value: "3", key: "stat_certs" },
+  { value: "5", key: "stat_certs" },
   { value: "500+", key: "stat_users" },
   { value: "~25", key: "stat_units" },
 ];
@@ -22,14 +22,6 @@ export default function Hero() {
       className="relative z-10 pt-20 pb-12 bg-gradient-to-b from-[hsl(213,100%,97%)] via-background to-background"
     >
       <div className="max-w-[1100px] mx-auto px-6 lg:px-10">
-        {/* Breadcrumb / Object Page header — Fiori style */}
-        <div className="flex items-center gap-2 text-xs text-text-secondary mb-4">
-          <span>Home</span>
-          <span>›</span>
-          <span>Consultants</span>
-          <span>›</span>
-          <span className="text-foreground font-semibold">Luiz Fernando</span>
-        </div>
 
         {/* Object Status badge */}
         <motion.div

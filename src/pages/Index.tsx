@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Experience from "@/components/Experience";
 import Certifications from "@/components/Certifications";
+import Education from "@/components/Education";
 import SapModules from "@/components/SapModules";
 import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
@@ -14,6 +15,7 @@ export default function Index() {
       <Hero />
       <Experience />
       <Certifications />
+      <Education />
       <SapModules />
       <Skills />
       <Contact />

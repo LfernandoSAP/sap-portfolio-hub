@@ -1,14 +1,13 @@
 import { motion } from "framer-motion";
 import { useLang } from "@/hooks/useLang";
-import { Package, Database, Cloud, ShoppingCart, Boxes, BrainCircuit } from "lucide-react";
+import { Package, Database, ShoppingCart, Boxes, BrainCircuit } from "lucide-react";
 
 const modules = [
   { code: "MM", name: "Materials Management", label: "SAP S/4HANA", Icon: Package, tone: "from-sky-500 to-blue-600" },
   { code: "P2P", name: "Procure-to-Pay", label: "SAP S/4HANA", Icon: ShoppingCart, tone: "from-emerald-500 to-teal-600" },
   { code: "IM", name: "Inventory Management", label: "SAP S/4HANA", Icon: Boxes, tone: "from-amber-500 to-orange-600" },
   { code: "MDG", name: "Master Data Governance", label: "SAP MDG", Icon: Database, tone: "from-indigo-500 to-violet-600" },
-  { code: "BTP", name: "Business Technology Platform", label: "SAP BTP", Icon: Cloud, tone: "from-cyan-500 to-sky-600" },
-  { code: "AI", name: "Business AI & Joule", label: "SAP BTP", Icon: BrainCircuit, tone: "from-fuchsia-500 to-purple-600" },
+  { code: "BAIP", name: "Business AI Platform", label: "ex-SAP BTP · Joule", Icon: BrainCircuit, tone: "from-fuchsia-500 to-purple-600" },
 ];
 
 export default function SapModules() {
@@ -21,7 +20,7 @@ export default function SapModules() {
         <h2 className="font-heading text-[clamp(1.4rem,2.5vw,1.875rem)] font-bold tracking-tight mb-8 text-foreground">
           {t("modules_heading")}
         </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2.5">
           {modules.map((m, idx) => (
             <motion.div
               key={m.code}

@@ -1,6 +1,6 @@
 # Luiz Fernando — SAP Portfolio
 
-Personal portfolio of **Luiz Fernando Gonçalves da Silva** — SAP MM / S/4HANA Sourcing & Procurement, SAP certified (MM · MDG · BTP · Business AI · Joule Studio).
+Personal portfolio of **Luiz Fernando Gonçalves da Silva** — SAP MM / S/4HANA Sourcing & Procurement, SAP certified (MM · MDG · SAP Business AI Platform (ex-BTP) · Joule Studio).
 
 🔗 Live site: https://lfernandosap.github.io/sap-portfolio-hub/
 🔗 LinkedIn: https://www.linkedin.com/in/luizfernando-sap-mm/

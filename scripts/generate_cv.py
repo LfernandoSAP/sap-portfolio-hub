@@ -18,9 +18,9 @@ def line():
 s=[]
 s+= [Paragraph("LUIZ FERNANDO GONÇALVES DA SILVA",H),
  Paragraph("SAP MM / S/4HANA Sourcing &amp; Procurement",SUB),
- Paragraph("SAP Certified | MM · MDG · BTP · Business AI · Joule Studio | 22+ Years in IT",SM),Spacer(1,3),
+ Paragraph("SAP Certified | MM · MDG · Business AI Platform (ex-BTP) · Joule Studio | 22+ Years in IT",SM),Spacer(1,3),
  Paragraph("Sorocaba, São Paulo, Brazil · Open to remote opportunities in Brazil and internationally<br/>+55 15 99704-3077 · lfernandosap@gmail.com · https://www.linkedin.com/in/luizfernando-sap-mm/ · lfernandosap.github.io/sap-portfolio-hub",SM),line()]
-s+=[Paragraph("SUMMARY",SEC),Paragraph("IT professional with 22+ years of experience in critical systems, infrastructure and business processes, SAP certified and focused on SAP MM / S/4HANA Sourcing &amp; Procurement functional consulting and support. Since January 2026, practicing continuously in an S/4HANA training environment (Cromos IT) with SAP GUI and SAP Fiori, covering Procure-to-Pay, material and supplier master data, info records, source lists, goods movements and physical inventory. Goal: SAP MM functional consulting and support roles, with MDG, BTP, SAP Business AI and Joule Studio as complementary skills.",B)]
+s+=[Paragraph("SUMMARY",SEC),Paragraph("IT professional with 22+ years of experience in critical systems, infrastructure and business processes, SAP certified and focused on SAP MM / S/4HANA Sourcing &amp; Procurement functional consulting and support. Since January 2026, practicing continuously in an S/4HANA training environment (Cromos IT) with SAP GUI and SAP Fiori, covering Procure-to-Pay, material and supplier master data, info records, source lists, goods movements and physical inventory. Goal: SAP MM functional consulting and support roles, with MDG, SAP Business AI Platform (ex-BTP) and Joule Studio as complementary skills.",B)]
 s+=[Paragraph("SAP CERTIFICATIONS",SEC),bl([
  "<b>S/4HANA Private Ed. – Sourcing &amp; Procurement</b> — C_TS452_2410 · C_TS452_2022 (2025) · renewed Oct 2026 · valid to Dec 2027",
  "<b>Master Data Governance</b> — C_MDG_1909 (2025) · renewed Oct 2026 · valid to Dec 2027",
@@ -50,7 +50,7 @@ s+=[Paragraph("PROFESSIONAL EXPERIENCE",SEC),
  "Master data: materials, suppliers (Business Partner), purchasing info records and source lists.",
  "Inventory management: movement types, stock transfers and physical inventory.",
  "SAP GUI and SAP Fiori; Clean Core principles."])]
-rows=[["SAP Core","S/4HANA MM · SAP MDG · SAP BTP · SAP Business AI · Joule Studio / Joule Agents · Procure-to-Pay (P2P) · SAP Fiori · Clean Core"],
+rows=[["SAP Core","S/4HANA MM · SAP MDG · SAP Business AI Platform (ex-BTP) · Joule Studio / Joule Agents · Procure-to-Pay (P2P) · SAP Fiori · Clean Core"],
 ["SAP Processes","Purchase Requisition · Purchase Order · Goods Receipt · Invoice Verification · Master Data (Material/BP)"],
 ["Development","Python / FastAPI · React / Vite · PostgreSQL · REST API / JWT · SQLAlchemy"],
 ["Projects & Processes","Requirements Analysis · Key User Coordination · User Training · RBAC / Audit Trail · Fleet Management"]]

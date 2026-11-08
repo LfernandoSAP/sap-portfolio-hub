@@ -166,6 +166,11 @@
     background: hsl(122 39% 41% / 0.08);
     border: 1px solid hsl(var(--sap-success) / 0.3);
   }
+  .status-info {
+    color: hsl(var(--primary));
+    background: hsl(var(--primary) / 0.08);
+    border: 1px solid hsl(var(--primary) / 0.3);
+  }
 }
 
 @layer utilities {

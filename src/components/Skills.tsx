@@ -11,7 +11,7 @@ interface SkillGroup {
 const skillGroups: SkillGroup[] = [
   {
     title: "SAP Core",
-    items: ["S/4HANA MM", "SAP MDG", "SAP BTP", "SAP Business AI", "Joule Studio / Joule Agents", "Procure-to-Pay (P2P)", "SAP Fiori", "Clean Core"],
+    items: ["S/4HANA MM", "SAP MDG", "SAP Business AI Platform (ex‑BTP)", "Joule Studio / Joule Agents", "Procure-to-Pay (P2P)", "SAP Fiori", "Clean Core"],
   },
   { titleKey: "sk_g2_title", itemsKey: "sk_g2_items" },
   {
